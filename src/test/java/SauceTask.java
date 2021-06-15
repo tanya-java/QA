@@ -15,6 +15,10 @@ public class SauceTask {
         driver.findElement(By.xpath("//div[contains(text(), '$')]"));
         driver.findElement(By.xpath("//button[contains(@name,'products')]"));
         driver.findElement(By.xpath("//button[contains(text(),'cart')]"));
-        driver.findElement(By.xpath(""));
+
+        driver.findElement(By.xpath("//*[@id='header_container']//following::a"));
+        driver.findElement(By.xpath("//*[@id='header_container']//preceding::a"));
+        driver.findElement(By.xpath("//*[@id='header_container']//ancestor::div"));
+        driver.findElement(By.xpath("//*[@id='header_container']//descendant::a"));
     }
 }
